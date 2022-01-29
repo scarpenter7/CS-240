@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "userName": "sam1",
+      "password": "hello1",
+      "email": "sam1@test.com",
+      "firstName": "Samuel1",
+      "lastName": "Carp1",
+      "gender": "m",
+      "personID": "sam1"
+    },
+    {
+      "userName": "sam2",
+      "password": "hello2",
+      "email": "sam2@test.com",
+      "firstName": "Samuel2",
+      "lastName": "Carp2",
+      "gender": "f",
+      "personID": "sam2"
+    },
+    {
+      "userName": "sam3",
+      "password": "hello3",
+      "email": "sam3@test.com",
+      "firstName": "Samuel3",
+      "lastName": "Carp3",
+      "gender": "m",
+      "personID": "sam3"
+    }
+  ],
+  "persons": [
+    {
+      "firstName": "Samuel1",
+      "lastName": "Carp1",
+      "gender": "m",
+      "personID": "sam1",
+      "fatherID": "curt1",
+      "motherID": "hedi1",
+      "associatedUsername": "sam1"
+    },
+    {
+      "firstName": "Samuel2",
+      "lastName": "Carp2",
+      "gender": "f",
+      "personID": "sam2",
+      "fatherID": "curt2",
+      "motherID": "hedi2",
+      "associatedUsername": "sam2"
+    },
+    {
+      "firstName": "Samuel3",
+      "lastName": "Carp3",
+      "gender": "m",
+      "personID": "sam3",
+      "fatherID": "curt3",
+      "motherID": "hedi3",
+      "associatedUsername": "sam3"
+    },
+    {
+      "firstName": "Gaylord",
+      "lastName": "Carp4",
+      "gender": "m",
+      "personID": "lUPX1Hif",
+      "fatherID": "82yBk6gf",
+      "motherID": "n70B0h0p",
+      "spouseID": "oBZZOWXi",
+      "associatedUsername": "sam4"
+    }
+  ],
+  "events": [
+    {
+      "eventType": "EventType1",
+      "personID": "sam1",
+      "city": "Seattle1",
+      "country": "USA1",
+      "latitude": 1,
+      "longitude": 1,
+      "year": 1,
+      "eventID": "hello1",
+      "associatedUsername":"sam1"
+    },
+    {
+      "eventType": "EventType2",
+      "personID": "sam2",
+      "city": "Seattle2",
+      "country": "USA2",
+      "latitude": 2,
+      "longitude": 2,
+      "year": 2,
+      "eventID": "hello2",
+      "associatedUsername":"sam2"
+    },
+    {
+      "eventType": "EventType3",
+      "personID": "sam3",
+      "city": "Seattle3",
+      "country": "USA3",
+      "latitude": 3,
+      "longitude": 3,
+      "year": 3,
+      "eventID": "hello3",
+      "associatedUsername":"sam3"
+    },
+    {
+      "eventType": "death",
+      "personID": "lUPX1Hif",
+      "city": "Kraków",
+      "country": "Poland",
+      "latitude": 50.0666999816895,
+      "longitude": 19.9333000183105,
+      "year": 2032,
+      "eventID": "8CCrU6qY",
+      "associatedUsername":"sam4"
+    }
+  ]
+}

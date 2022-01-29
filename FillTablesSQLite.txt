@@ -1,0 +1,51 @@
+INSERT INTO Users (UserName, PersonID, Gender, Password, Email, FirstName, LastName)
+VALUES
+    ("sam1","sam1","m","hello1","sam1@test.com", "Samuel1","Carp1"),
+    ("sam2","sam2","f","hello2","sam2@test.com", "Samuel2","Carp2"),
+    ("sam3","sam3","m","hello3","sam3@test.com", "Samuel3","Carp3");
+
+
+INSERT INTO Persons ( personID, userName, gender, fatherID, motherID, spouseID, firstName, lastName)
+VALUES
+	("sam1","sam1","m","curt1", "hedi1", "spouse1", "Samuel1", "Carp1"),
+	("sam2","sam2","f","curt2", "hedi2", "spouse2", "Samuel2", "Carp2"),
+	("sam3","sam3","m","curt3", "hedi3", "spouse3", "Samuel3", "Carp3"),
+	("curt1", "", "m", "curt11", "hedi11", "hedi1", "Curt1", "Carp1"),
+	("curt2", "", "m", "curt22", "hedi22", "hedi2", "Curt2", "Carp2"),
+	("curt3", "", "m", "curt33", "hedi33", "hedi3", "Curt3", "Carp3"),
+	("hedi1", "", "f", "curt17", "hedi17", "curt1", "Hedi1", "Carp1"),
+	("hedi2", "", "f", "curt18", "hedi18", "curt2", "Hedi2", "Carp2"),
+	("hedi3", "", "f", "curt19", "hedi19", "curt3", "Hedi3", "Carp3"),
+	("spouse1", "", "f", "", "", "sam1", "Spouse1", "Carp1"),
+	("spouse2", "", "m", "", "", "sam2", "Spouse2", "Carp2"),
+	("spouse3", "", "f", "", "", "sam3", "Spouse3", "Carp3"),
+
+	("curt11", "", "m", "", "", "hedi11", "Curt11", "Carp1"),
+	("curt22", "", "m", "", "", "hedi22", "Curt22", "Carp2"),
+	("curt33", "", "m", "", "", "hedi33", "Curt33", "Carp3"),
+	("hedi11", "", "f", "", "", "curt11", "Hedi11", "Carp1"),
+	("hedi22", "", "f", "", "", "curt22", "Hedi22", "Carp2"),
+	("hedi33", "", "f", "", "", "curt33", "Hedi33", "Carp3"),
+	("curt17", "", "m", "", "", "hedi17", "Curt17", "Carp1"),
+	("curt28", "", "m", "", "", "hedi18", "Curt18", "Carp2"),
+	("curt39", "", "m", "", "", "hedi19", "Curt19", "Carp3"),
+	("hedi17", "", "f", "", "", "curt17", "Hedi17", "Carp7"),
+	("hedi28", "", "f", "", "", "curt18", "Hedi18", "Carp8"),
+	("hedi39", "", "f", "", "", "curt19", "Hedi19", "Carp9");
+
+	INSERT INTO AuthorizationTokens (authToken, userName)
+    VALUES
+        ("hello1", "sam1"),
+        ("hello2", "sam2"),
+        ("hello22", "sam2"),
+        ("hello222", "sam2"),
+        ("hello3", "sam3");
+
+    INSERT INTO Events ( eventID, userName, personID, latitude, longitude, country, city, eventType, year)
+    VALUES
+        ("hello1", "sam1", "sam1", 1, 1, "USA1", "Seattle1", "EventType1", 1),
+        ("hello2", "sam1", "sam1", 2, 2, "USA2", "Seattle2", "EventType2", 2),
+        ("hello3", "sam1", "sam1", 3, 3, "USA3", "Seattle3", "EventType3", 3),
+        ("hello11", "", "curt11", 1, 1, "USA1", "Seattle1", "EventType1", 1),
+        ("hello22", "", "curt11", 2, 2, "USA2", "Seattle2", "EventType2", 2),
+        ("hello33", "", "curt11", 3, 3, "USA3", "Seattle3", "EventType3", 3);

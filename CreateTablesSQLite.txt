@@ -1,0 +1,43 @@
+create table if not exists Users
+(
+	userName varchar(32) not null primary key UNIQUE,
+	personID varchar(255) not null UNIQUE,
+	gender varchar(1) not null,
+	password varchar(255) not null,
+	email varchar(255) not null UNIQUE,
+	firstName varchar(255) not null,
+	lastName varchar(255) not null
+);
+
+create table if not exists AuthorizationTokens
+(
+	authToken varchar(255) not null primary key UNIQUE,
+	userName varchar(255) not null
+	
+);
+
+create table if not exists Persons
+(
+	personID varchar(255) not null primary key UNIQUE,
+	userName varchar(32),
+    gender varchar(1) not null,
+	fatherID varchar(255),
+	motherID varchar(255),
+	spouseID varchar(255),
+	firstName varchar(255) not null,
+	lastName varchar(255) not null
+);
+
+
+create table if not exists Events
+(
+	eventID varchar(255) not null primary key UNIQUE,
+	userName varchar(32),
+	personID varchar(255) not null,
+	latitude real not null,
+	longitude real not null,
+	country varchar(255) not null,
+	city varchar(255) not null,
+	eventType varchar(32) not null,
+	year int
+);
